@@ -1,0 +1,12 @@
+html
+	head
+		title= title
+	body
+		div(id='main')
+			h1= title
+			form(method='post', action='/oauth/auth/authorize')
+				each scope in scopes
+					input(type='checkbox' name='scope' value=scope.scope_id)
+					label= scope.description
+					br
+				input(type='submit' value='Go!')

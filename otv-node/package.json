@@ -1,0 +1,30 @@
+{
+  "name": "otv-node",
+  "description": "Node OpenTrailView Server",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bluebird": "^3.7.2",
+    "connect-pg-simple": "^6.0.1",
+    "exifr": "^5.0.2",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "oauth2-server": "^3.1.1",
+    "openpanos-server": "^0.1.11",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-openstreetmap": "^0.1.2",
+    "pg": "^7.14.0",
+    "pug": "^3.0.0",
+    "random-bytes": "^1.0.0",
+    "sharp": "^0.25.4",
+    "validate.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "shx": "^0.3.2"
+  },
+  "author": "nickw",
+  "license": "GPL-3.0-or-later"
+}

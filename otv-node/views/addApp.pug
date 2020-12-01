@@ -1,0 +1,22 @@
+doctype html
+html
+	body
+		div(id='main')
+			h1  OpenTrailView - Register your client app
+			if(error)
+				p(class='error') #{error}
+			else if(clientId && clientSecret)
+				div(class='important') 
+					p Your client ID is #{clientId}. 
+					p Your secret is #{clientSecret}. 
+					p Please note these down!
+			form(method='post' action='addApp')
+				label(for=app_name) App Name:
+				br
+				input(type='text' name='app_name')
+				br
+				label(for=redirect_uri) Redirect URI:
+				br
+				input(name='redirect_uri' type='text')
+				br
+				input(type='submit' value='Go!')

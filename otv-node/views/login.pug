@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		title= title
+	body
+		div(id='main')
+			h1= title
+			form(method='post' action='/user/login')
+				label(for='username') Username
+				br
+				input(name='username' type='text')
+				br
+				label(for='password') Password
+				br
+				input(name='password' type='password')
+				br
+				each val, index in hiddenFields
+					input(type='hidden' name=index value=val)
+				input(type='submit' value='Go!')

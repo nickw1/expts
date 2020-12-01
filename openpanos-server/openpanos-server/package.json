@@ -1,0 +1,23 @@
+{
+  "name": "openpanos-server",
+  "version": "0.1.14",
+  "description": "An experimental server for OpenPanos",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "exifr": "^5.0.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.9",
+    "express-promise-router": "^3.0.3",
+    "fast-xml-parser": "^3.15.0",
+    "pg": "^7.14.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "panorama",
+    "360",
+    "openstreetmap"
+  ],
+  "author": "nickw",
+  "license": "GPL-3.0-or-later"
+}
